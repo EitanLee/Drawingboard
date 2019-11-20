@@ -1,13 +1,8 @@
-window.addEventListener(
-	"touchmove",
-	function(event) {
-		if(event.scale !== 1) {
-			event.preventDefault();
-		}
-	}, {
-		passive: false
-	}
-);
+document.documentElement.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  }, false);
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 var startPaint = false;
