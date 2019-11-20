@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+ul,ol{
+    margin: 0;
+    list-style: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#canvas {
+    background: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.button {
+    position: fixed;
+    left: 20%;
+    top: 0;
+    padding: 20px;
+}
+
+.button svg{
+    width: 1.5em;
+    height: 1.5em;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+.button svg.active{
+    fill: #F8B1BC;
+    transform: scale(1.2 );
+}
+
+.colors{
+    position: fixed;
+    top: 40%;
+    /* padding-inline-start:10px; */
+}
+
+.colors>li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 15px 0;
+    border:2px solid white;
+    transition: all 0.3s;
+    
+}
+.colors>li.grey{
+    background: grey;
+}
+
+.colors>li.red{
+    background: #E44034;
+}
+
+.colors>li.blue{
+    background: #3879E6;
+}
+
+.colors>li.yellow{
+    background: #F4B705;
+}
+
+.colors>li.green{
+    background: #33A351;
+}
+
+.colors>li.black{
+    background: black;
+}
+.colors>li.active{
+    box-shadow: 0 0  10px #F693C3;
+    transform: scale(1.1); 
+}
+.size{
+    position: fixed;
+    top: 40%;
+    right: 30px;
+}
+.size>li{
+    margin: 40px 0;
+    
+}
+.size>li.thin{
+    height: 0;
+    width: 30px;
+    border-bottom: 2px solid black;
+}
+.size>li.thick{
+    height: 0;
+    width: 30px;
+    border-bottom: 5px solid black;
+}
+
+ 

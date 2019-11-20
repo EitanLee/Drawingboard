@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="//at.alicdn.com/t/font_1520982_d52tl87igog.js"></script>
+    <title>canvas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <canvas id="canvas" width="500px" height="500px"></canvas>
+    <div id="button" class="button">
+        <svg id="brush" class="active icon" aria-hidden="true">
+            <use xlink:href="#icon-brush"></use>
+        </svg>
+        <svg id="eraser" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="clear" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-clear"></use>icon-save
+        </svg>
+        <svg id="download" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-save"></use>icon-save
+        </svg>
+    </div>
+    <ol class="colors">
+        <li id="grey" class=" grey"></li>
+        <li id="red" class="red"></li>
+        <li id="blue" class="blue"></li>
+        <li id="yellow" class="yellow"></li>
+        <li id="green" class="green"></li>
+        <li id="black" class="active black"></li> 
+    </ol>
+    <ol class="size">
+        <li class="thin" id="thin"></li>
+        <li class="thick" id="thick"></li>
+    </ol>
+</body>
+<script src="./JS/demo.js"></script>
+</html>
